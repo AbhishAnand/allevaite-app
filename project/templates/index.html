@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alleviate</title>
+  <link rel="icon" type="image/ico" href="static/images/brand1.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><!--BOOTSTRAP 4 CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/stylesheets/indx_main.css"><!--CUSTOM CSS-->
+  <link rel="stylesheet" href="/static/stylesheets/pre.css">
+  <link rel="stylesheet" href="/static/stylesheets/about_main.css">
+  <link rel="stylesheet" href="/static/stylesheets/dark_diary.css">
+  <link rel="stylesheet" href="/static/stylesheets/reach_con.css">
+  <link rel="stylesheet" href="/static/stylesheets/nav1.css">
+  <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet"> 
+</head>
+<body onload="loafer()">
+    <!-- Preloader -->
+    <div class="container-fluid" id="loading"> 
+        
+    </div>
+    <!--/preloader-->
+    <!--IMAGE CONTAINER-->
+    <div class="image-landing" id="top">
+      <div class=" container-fluid landing-gradient">
+        <!-- <div class="container"> -->
+          <nav class="nav-bar" id="navID">
+            <button type="button" onclick="myfnc(this)" class="toggle-collapse" id="toggle-button">
+                    <span class="toggle-icon icon-t"></span>
+                  </button>
+           
+            <ul class="side-nav-1">
+              <li class="nav-item">
+                <a href="#" class="site-name"><img src="/static/images/logo1.png" width="80%"></a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-link">HOME</a>
+              </li>
+              <li>
+                  <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#service" class="nav-link">Dark Diary</a>
+                  </li>
+                    <li>
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                      </li>
+            </ul>
+          </nav>
+        <!-- </div> -->
+        <img class="img-land" src="/static/images/logo1.png" width="20%";>
+        <div class="banner">
+                <h1 class="auto-type">Namaste <span class="type"></span></h1>
+        </div>
+        <a href="about.html">
+            <div class="btn-1"> 
+                <h5 class="btn-text" style="border-radius: 30px;">Know Us</h5>
+            </div>
+        </a>
+        <a href="#top">
+                <div class="top-jump">
+                        <i class="fas fa-arrow-up"></i>
+                </div>
+        </a>
+        
+      </div>
+    </div>
+    <!--/IMAGE CONTAINER-->
+    <!--ABOUT-->
+    <div class=" about-wrapper container-fluid" id="about">
+            <div class="row about-head-wrap">
+              <div class="col-sm-12 col-md-12 about-text-wrap">
+                <p id="hello" class="hello">HELLO THERE</p>
+                <p style="font-style: normal;margin-bottom: 50px;" id="greet" class="greet">Know About Alle<span style="color:#ffff">v</span>;ate</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-10 col-md-10 para-wrap">
+                  <p id="para">Alleviate is a project focused mainly on dealing and spreading
+                    awareness regarding mental health.
+                    Analyse your thoughts,confessions and find current positivity in your mood or mental health.
+                  </p>
+              </div>
+            </div>
+           
+                <img class="img-land1" src="/static/images/Showcase.png" width="30%";>
+              
+           
+          </div>
+         <!--/ABOUT-->
+      <!-- DARK DIARY -->
+      <div class="service-wrap container-fluid" id="service">
+        <div class="row service-head-wrap">
+          <div class="col-sm-12 col-md-12 service-text-wrap">
+            <p id="tell" class="tell">Let's Do Some</p>
+            <p id="tag-line" class="tag-line">Analysis</p>
+          
+        </div>
+        <div class="row hr-show">
+          <div class="col-md-8 col-sm-8 hr-container">
+           <hr> 
+          </div>
+        </div>
+    
+        <a href="{{url_for('model.text')}}">
+            <div class="btn-10" style="margin-bottom: 30px; border-radius: 30px;">
+                <h5 class="btn-text">Go to Dark Diary</h5>
+            </div>
+        </a>
+      
+      
+    
+      </div>
+    </div>
+<!-- DARK DIARY -->
+          <!--CONTACT-->
+          <div class="contact-wrap" id="contact">
+              <div class="container-fluid landing-gradient">
+                    <div class="container contact-container">
+                            <div class="row service-head-wrap">
+                                    <div class="col-sm-12 col-md-12 service-text-wrap">
+                                      <p id="tell" class="tell" style="color: #E13E3E;">CONTACT US</p>
+                                      <p id="tag-line-1" class="tag-line-1" style="color: #E13E3E;">Reach out for any queries</p>
+                                    </div>
+                                  </div>
+                                  <div class="row hr-show">
+                                    <div class="col-md-8 col-sm-8 hr-container">
+                                      <hr>
+                                    </div>
+                                  </div>
+                    </div>
+                    <div class="container contact-area">
+                        <div class="row">
+                                <div class="col-sm-8 col-md-8 form-area">
+                                        <div class="row">
+                                            <div class="col-sm-11 col-md-11 form-sub-area">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-xs-12">
+                                                        <h5 class="con-head">
+                                                            SEND US A MESSAGE
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 form-1">
+                                                        <!-- form -->
+                                                        <form name="sentMessage" id="contactForm" novalidate action="mail_handler.php" method="post" enctype="multipart/form-data">
+                                                                <div class="control-group form-group">
+                                                                  <div class="controls">
+                                                                    <label>Full Name:</label>
+                                                                    <input type="text" class="form-control" name="name" required data-validation-required-message="Please enter your name." style="color:rgb(34, 11, 11);">
+                                                                    <p class="help-block"></p>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="control-group form-group">
+                                                                  <div class="controls">
+                                                                    <label  >Subject:</label>
+                                                                    <input type="text" class="form-control" name="subject" required data-validation-required-message="Please enter your Subjects." style="color:rgb(34, 11, 11);">
+                                                                  </div>
+                                                                </div>
+                                                                <div class="control-group form-group">
+                                                                  <div class="controls">
+                                                                    <label>Email Address:</label>
+                                                                    <input type="email" class="form-control" name="email" required data-validation-required-message="Please enter your email address." style="color:rgb(34, 11, 11);">
+                                                                  </div>
+                                                                </div>
+                                                                <div class="control-group form-group">
+                                                                  <div class="controls">
+                                                                    <label>Message:</label>
+                                                                    <textarea rows="2" cols="200" class="form-control" name="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="color:rgb(34, 11, 11);" ></textarea>
+                                                                  </div>
+                                                                </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                                <div class="row" >
+                                                    <div class="col-md-12 col-sm-12" >
+                                                            <div class="con-btn">
+                                                                <button type="submit" class="btn btn-success con-sub-button" style="background-color:#E13E3E; border: none; border-radius: 20px; font-family: 'Raleway';" name="submit" id="sendButton">SUBMIT</button>
+                                                           </form>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4 con-area">
+                                            <div class="row">
+                                                    <div class="col-md-12 col-xs-12">
+                                                        <h5 class="con-head">
+                                                            CONTACT INFO
+                                                        </h5>
+                                                    </div>
+                                            </div>
+                                            <div class="row  form-t-area">
+                                                <div class="col-xs-12 col-md-12 f-c">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 con-main-t">
+                                                                <h5 class="con-m-h">Where To Find Us</h5>
+                                                                <p class="con-m-t">Near Kiit University, Patia,Bhubaneswar,Orissa</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                            <div class="col-sm-12 col-md-12 con-main-t">
+                                                                    <h5 class="con-m-h">Email Us At</h5>
+                                                                    <p class="con-m-t">support@alleviate.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-sm-12 col-md-12 con-main-t">
+                                                                        <h5 class="con-m-h">Call Us At</h5>
+                                                                        <p class="con-m-t">Phone: +91 7537018261<br>
+                                                                                Mobile: +91 94257002693</p>
+                                                                </div>
+                                                         </div>
+                                                         <div class="row">
+                                                                <div class="col-sm-12 col-md-12 con-social">
+                                                                        <p id="social">
+                                                                                <a href="http://www.facebook.com/"><i class="fab fa-facebook-f i"></i></a>
+                                                                                <a href="https://twitter.com/"><i class="fab fa-twitter  i"></i></a> 
+                                                                                <a href="http://www.instagram.com/"><i class="fab fa-instagram  i"></i></a> 
+                                                                        </p>
+                                                                </div>
+                                                         </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                        </div>
+                    </div>
+                        
+              </div>  
+          </div>
+     
+<!-- SCRIPT -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: '50px',
+        duration: 5000,
+        easing: 'ease',
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4,
+      });
+    </script>
+    <script>
+         sr.reveal('#top .btn-1 ',{
+        origin: 'bottom',
+        scale:0.3,
+    });
+    // about
+       sr.reveal('#about .hello, .greet, .para-wrap ',{
+        
+    });
+ 
+    sr.reveal('#about .about-head-counter ',{
+        origin: 'right',
+    });
+    // service
+
+    sr.reveal('#service .tell, .tag-line ',{
+        origin: 'bottom',
+    });
+    sr.reveal('#service .text-wrap-service:nth-child(odd) ',{
+        origin: 'left',
+    });
+    sr.reveal('#service .text-wrap-service:nth-child(even) ',{
+        origin: 'right',
+    });
+
+    // contact
+    sr.reveal('#contact .tell,.tag-line-1 ',{
+        origin: 'bottom',
+    });
+    sr.reveal('#contact .contact-area ',{
+        origin: 'left',
+        duration: 3000,
+        scale:0.1,
+    });
+    </script>
+    
+<script src="/static/scripts/pre.js"></script>
+<script src="/static/scripts/typed.js"></script>
+<script src="/static/scripts/counter.js"></script>
+<script src="/static/scripts/scroll.js"></script>
+
+<script>
+    function myfnc(e){
+        e.classList.toggle("show");
+
+        var elem=document.getElementById("navID"),
+        Style =window.getComputedStyle(elem),
+        right=Style.getPropertyValue("right");
+
+        if(right =="0px"){
+            elem.style.right ="-260px";
+        }else{
+            elem.style.right ="0px";
+        }
+    }
+</script>
+<script>
+        var typed = new Typed(".type", {
+          strings: [" User !!",
+           " It's so nice to see You !!",
+           
+            ],
+          typeSpeed:60,
+          backSpeed:60,
+          loop:true
+        });
+  </script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

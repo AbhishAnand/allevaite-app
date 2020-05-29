@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <section><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+      
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/login.css') }}">    
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet"> 
+</head> 
+<body>
+    <div class="header">
+        <h1 style="text-align: center; font-family:moon flower;font-style: normal;font-weight: normal;margin-bottom:-2px;">(^_^)</h1>
+    <h1 style="font-size: 60px; font-family:'raleway';font-style: normal;font-weight: normal;">Namaste!</h1>
+    <p style="font-size:24px; text-align: center;font-family:raleway;color: #E13E3E;margin-top:-10px;">Its so nice to see you</p>
+</div>
+     
+   
+ <div class = "container">
+   
+     <div class="login-form" action="#" method="post" enctype="multipart/form-data" autocomplete="off" onsubmit="return validation()" method="POST">
+       
+        <h1 class="mr" id="service" style="font-style: normal;margin-bottom: 50px;">Alle<span style="color:#E13E3E">v</span>;ate</span></h1>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="is-danger" style="color: #E13E3E;">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+         <form action="" method="POST">
+         <input type="text" name="user" placeholder="Username" required="">
+         <input type="password" name="pwd" placeholder="Password" required="">
+         <input type="submit" onclick="window.location.href='#'" value="Login">
+         <input type="button" onclick="window.location.href='signup'" value="Signup">
+         </form>
+         <label class="switch">
+            <input type="checkbox">
+            <span class="slider round" style="color:#fff" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remember&nbsp;me</span>
+            
+          </label>
+         <a href="#">Forgot password?</a>
+         </div>
+         </div>
+         </section>
+         </body>
+         </html>

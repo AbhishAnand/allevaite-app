@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="ENG">
+
+<head>
+	<title>Alleviate</title>
+  <link rel="icon" type="image/ico" href="/static/images/brand1.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  
+    
+	<link href="/static/stylesheets/team.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="/static/stylesheets/nav1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><!--BOOTSTRAP 4 CSS-->
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body style="background-color: #202020;">
+
+
+<!--IMAGE CONTAINER-->
+<div class="image-landing" id="top">
+	<div class=" container-fluid landing-gradient">
+	  <!-- <div class="container"> -->
+		<nav class="nav-bar" id="navID">
+		  <button type="button" onclick="myfnc(this)" class="toggle-collapse" id="toggle-button">
+				  <span class="toggle-icon icon-t"></span>
+				</button>
+		 
+		  <ul class="side-nav-1">
+			<li class="nav-item">
+			  <a href="#" class="site-name"><img src="/static/images/logo1.png" width="80%"></a>
+			</li>
+			<li>
+			  <a href="{{ url_for('main.index')}}" class="nav-link">HOME</a>
+			</li>
+			<li>
+				<a href="{{ url_for('main.index',_anchor='about')}}" class="nav-link">ABOUT</a>
+			  </li>
+			  <li>
+				  <a href="{{ url_for('main.profile')}}" class="nav-link">Dash board</a>
+				</li>
+				  <li>
+					  <a href="{{ url_for('main.index',_anchor='contact')}}" class="nav-link">CONTACT</a>
+					</li>
+		  </ul>
+		</nav>
+	 
+	</div>
+  </div>
+  <!--/IMAGE CONTAINER-->
+
+
+	
+	 <!-- //banner-text -->
+	 
+   <section class="banner_bottom py-md-5 py-4">
+        <div class="container py-lg-5">
+            <div class="text-center wthree-title pb-sm-5 pb-3">
+                <h1  style="color: #E13; margin-left: 1px; font-family: 'Raleway'; font-size: 60px;font-weight: 300;">About Us</h1><br>
+                <p style="color: whitesmoke; font-family: 'Raleway'; font-size: 15px;font-weight: 100;">We are a team of five Computer Science and Engineering students.
+					We aim to spread awareness regarding mental health issues.
+				</p><br>
+				<p style="color: whitesmoke; font-family: 'Raleway'; font-size: 15px;font-weight: 100;">The goal behind Alleviate is to provide a helping hand,somewhat of a digital assistance
+					to all those who need it.
+				</p><br>
+				<p style="color: whitesmoke; font-family: 'Raleway'; font-size: 15px;font-weight: 100;">We don't provide the treatment ,we try to help you overcome and to support others</p><br>
+            </div>
+			<br>
+			<br>
+	<p style="color: darkcyan; text-align: center; padding-left: 5%; font-size: large; ">
+
+	"Just because no one else can heal or do your inner work
+	for you doesn't mean you can, should or need to do it alone."
+
+	</p>
+
+	<figcaption style="color: darkcyan;text-align:right;padding-right: 10%;"> - Lisa olivera(Therapist)</figcaption>
+
+
+						
+			
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!--//ab-->
+	<!-- team -->
+	<div class="container">
+		<div class="row">
+			<div class="heading-title text-center">
+				<h3 class="text-uppercase">Our Team </h3>
+				<p class="p-top-30 half-txt">We are the CSE Undergrads. Our team consists of members who are expertise in different fields of engineering. </p>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="team-member">
+					<div class="team-img">
+						<img src="/static/images/sid.jpeg" alt="team member" class="img-responsive">
+
+					</div>
+					<div class="team-hover">
+						<div class="desk">
+							<h4>Hi There !</h4>
+							<p>I love to competetive programming.</p>
+						</div>
+						<div class="s-link">
+							<a href="http://www.facebook.com/aquaregia0609"><i class="fa fa-facebook"></i></a>
+							<a href="https://linkedin.com/sidharth-purohit-78012596"><i class="fa fa-twitter"></i></a>
+							<a href="http://www.github.com/sidart069"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-title">
+					<h5>Sidharth Purohit</h5>
+					<span>ML Engineer</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="team-member">
+					<div class="team-img">
+						<img src="/static/images/niwanshu.jpeg" alt="team member" class="img-responsive">
+
+					</div>
+					<div class="team-hover">
+						<div class="desk">
+							<h4>Machine Learning</h4>
+							<p>I love to play with ML Algorithms.</p>
+						</div>
+						<div class="s-link">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-title">
+					<h5>Niwanshu Maheswari</h5>
+					<span>ML Engineer</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="team-member">
+					<div class="team-img">
+						<img src="/static/images/skm.jpg" alt="team member" class="img-responsive">
+
+					</div>
+					<div class="team-hover">
+						<div class="desk">
+							<h4>I love to design</h4>
+							<p>I love to introduce myself as a hardcore Web Designer.</p>
+						</div>
+						<div class="s-link">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-title">
+					<h5>Shubham Kumar Maurya</h5>
+					<span>UI/UX Designer</span>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<div class="col-md-4 col-sm-4">
+			<div class="team-member">
+				<div class="team-img">
+					<img src="/static/images/suraj.jpeg" alt="team member" class="img-responsive">
+
+				</div>
+				<div class="team-hover">
+					<div class="desk">
+						<h4>I love to develop websites.</h4>
+						<p>I love to introduce myself as a hardcore Web Developer.</p>
+					</div>
+					<div class="s-link">
+						<a href="http://www.facebook.com/surajkumar.mishra.3954"><i class="fa fa-facebook"></i></a>
+						<a href="https://linkedin.com/suraj-kumar-mishra-7b2242130"><i class="fa fa-twitter"></i></a>
+						<a href="http://www.github.com/skm25199"><i class="fa fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="team-title">
+				<h5>Suraj kumar Mishra</h5>
+				<span>Frontend Developer</span>
+			</div>
+		</div>
+
+
+		<div class="col-md-4 col-sm-4">
+			<div class="team-member">
+				<div class="team-img">
+					<img src="/static/images/abhish.jpeg" class="img-responsive">
+				</div>
+				<div class="team-hover">
+					<div class="desk">
+						<h4>I love to do coding</h4>
+						<p>I love to introduce myself as a hardcore coder.</p>
+					</div>
+					<div class="s-link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="http://www.github.com/AbhishAnand"><i class="fa fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="team-title">
+				<h5>Abhish Anand</h5>
+				<span>Backend Developer</span>
+			</div>
+		</div>
+
+	</div>
+</div>
+	
+
+	<!-- //team -->
+<!-- SCRIPT -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: '50px',
+        duration: 5000,
+        easing: 'ease',
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4,
+      });
+    </script>
+    <script>
+         sr.reveal('#top .btn-1 ',{
+        origin: 'bottom',
+        scale:0.3,
+    });
+</script>
+  
+<script src="/static/scripts/pre.js"></script>
+<script src="/static/scripts/typed.js"></script>
+<script src="/static/scripts/counter.js"></script>
+<script src="/static/scripts/scroll.js"></script>
+
+<script>
+    function myfnc(e){
+        e.classList.toggle("show");
+
+        var elem=document.getElementById("navID"),
+        Style =window.getComputedStyle(elem),
+        right=Style.getPropertyValue("right");
+
+        if(right =="0px"){
+            elem.style.right ="-260px";
+        }else{
+            elem.style.right ="0px";
+        }
+    }
+</script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
