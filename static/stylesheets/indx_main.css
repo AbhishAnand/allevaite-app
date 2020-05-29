@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+body{
+    overflow-x: hidden;
+
+}
+
+.landing-gradient{
+    height:100%;
+    
+}
+.image-landing{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/static/images/background.jpg') ;   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img-land{
+    margin-left:40%;
+    margin-top: 15%; 
+}
+.auto-type{
+    margin-left: 30%;
+    padding-top: 8%;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    font-family: 'Raleway';
+}
+.type{
+    color: #E13E3E;
+}
+
+.btn-1{
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-left: 42%;
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway';
+   
+}
+
+.btn-1:hover{
+    background-color: #E13E3E;
+    color:#202020;
+    font-weight: 700;
+    transition-delay: 0.2s;
+}
+.btn-text{
+    font-size: 1.6rem;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

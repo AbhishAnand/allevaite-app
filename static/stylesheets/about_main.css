@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Srisakdi');
+.about-wrapper{
+    background-color:#202020;
+    height: 100vh;
+    /* position: relative; */
+}
+.about-gradient{
+    /* background:linear-gradient(to bottom,rgba(94, 250, 3, 0.897) 0%,rgba(24, 122, 4, 0.1) 100%); */
+    height: 100%;
+}
+.about-text-wrap{
+    margin-top: 4rem;
+}
+#hello{
+    text-align: center;
+    font-weight: bold !important;
+    letter-spacing: .1rem;
+    font-size: 17px;
+    line-height: 23px;
+    font-family: 'Raleway';
+    color: grey;
+}
+#greet{
+    text-align: center;
+    margin-top: -30px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: .1rem;
+    margin:0 0 20px;
+    font-family: 'Srisakdi';
+    color: #fff;
+    font-size: 60px;
+}
+.para-wrap{
+    /* background-color:black; */
+    margin-left: 6rem;
+    margin-bottom: 40px;
+}
+#para{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: grey;
+    font-family: 'Raleway';
+
+     margin: -2rem; 
+}
+.img-land1{
+    margin-left:40%;
+    margin:2rem;
+    margin-left: 35%;
+    
+}
+.border-right{
+    border-right:1px solid;
+    border-color: rgba(247, 240, 240,0.1);
+}
+.about-head-counter{
+    margin-top:1.8rem;
+    /* opacity: 0; */
+}

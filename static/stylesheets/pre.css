@@ -1,0 +1,50 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Felipa');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+/* MAIN DIV */
+#loading{
+
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: black
+	url('/static/images/220.gif') no-repeat center;	
+	z-index: 99999;
+	text-align: center; 
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+/* HEADING */
+#loading h1{
+	color: rgb(217,83,79);
+	margin-top:7rem;
+	margin-bottom: 2rem;
+	font-size: 70px; 
+	font-weight: bold; 
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* PHONE VIEW */
+@media only screen and (max-width:320px){
+	#loading{
+
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: black
+		url('../Double\ Ring-1s-111px\ \(1\).gif') no-repeat center;	
+		z-index: 99999;
+		text-align: center; 
+		vertical-align: middle;
+	}
+	#loading h1{
+		color: rgb(217,83,79);
+		margin-top:7rem;
+		margin-bottom: 2rem;
+		font-size: 52px; 
+		font-weight: bold; 
+		font-family: 'Felipa', cursive;
+	}
+} 
