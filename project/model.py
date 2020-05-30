@@ -32,9 +32,9 @@ def predict():
         from . import db
         from .models import User,Post
 
-        # post = Post(title=title, author=current_user.name , content = cleantext, owner_id=current_user.id)        
-        # db.session.add(post)
-        # db.session.commit()
+        post = Post(title=title, author=current_user.name , content = cleantext, owner_id=current_user.id)        
+        db.session.add(post)
+        db.session.commit()
         data = [cleantext]
         my_pred = str(clf.predict(data)[0])
         output_str = " Predicted Output Is ::: {} ".format(my_pred)
