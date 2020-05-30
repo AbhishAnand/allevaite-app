@@ -38,16 +38,16 @@
                 <a href="#" class="site-name"><img src="/static/images/logo1.png" width="80%"></a>
               </li>
               <li>
-                <a href="index.html" class="nav-link">HOME</a>
+                <a href="{{ url_for('main.index')}}" class="nav-link">HOME</a>
               </li>
               <li>
-                  <a href="#about" class="nav-link">ABOUT</a>
+                  <a href="{{ url_for('main.index',_anchor='about')}}" class="nav-link">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#service" class="nav-link">Dark Diary</a>
+                    <a href="{{ url_for('main.profile')}}" class="nav-link">Dark Diary</a>
                   </li>
                     <li>
-                        <a href="#contact" class="nav-link">CONTACT</a>
+                        <a href="{{ url_for('main.index',_anchor='contact')}}" class="nav-link">CONTACT</a>
                       </li>
             </ul>
           </nav>
